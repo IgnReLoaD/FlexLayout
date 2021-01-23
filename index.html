@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "pagina web de estudio y repaso">
+        <meta name = "author"      content = "Alumno IT Academy BcnActiva">
+        <meta name = "keywords"    content = "repaso estilos con Flex Layout, aprendizaje web">     
+        <title>Flex Layout</title>
+        <link rel="stylesheet" href="styles.css">          
+    </head>
+    <body>
+        <div id="content" class="flex-vertical">
+
+            <header class="flex-vertical">
+                <hgroup id="header-sup" class="flex-horizontal">
+                    <div id="header-left" class="lateral">header-left</div>
+                    <div id="header-center" class="central">header-center</div>
+                    <div id="header-right" class="lateral">header-right</div>
+                </hgroup>
+                <hgroup id="header-inf" class="flex-1-col">
+                    <div id="header-center-inf">header-inf</div>
+                </hgroup>
+            </header>        
+
+            <main>
+                <article>
+
+                    <section class="flex-2-cols">
+                        <post> &nbsp; </post>
+                        <post> &nbsp; </post>
+                        <post> &nbsp; </post>
+                        <post> &nbsp; </post>
+                    </section>
+                    <section class="flex-1-col">
+                        <post> &nbsp; </post>
+                    </section>
+
+                </article>
+
+                <aside>
+                    <p> &nbsp; </p>
+                </aside>
+            </main>
+
+            <footer class="flex-1-col">
+                <p> &nbsp; </p>
+            </footer>
+        </div>
+    </body>
+</html>
