@@ -1,11 +1,12 @@
 * {
-    border-style: solid;
-    border-width: 2px;
-    border-color: hotpink;
+    /* activem els borders de totes les peces nomes mentre elaborem la pag  */
+    /*   border-style: solid;    */
+    /*   border-width: 2px;      */
+    /*   border-color: hotpink;  */
 }
 
 #content {
-    height: 460px;
+    height: 400px;
 }
 
 .flex-vertical {
@@ -27,7 +28,7 @@ header {
     background-color: black;
     margin-bottom: 20px;
     display: flex;
-    height: 125px;
+    height: 85px;
 }
 
 .lateral {
@@ -41,6 +42,7 @@ header {
 }
 
 #header-sup {
+    background-color: #40465a;
     border-color: #40465a;
     border-width: 10px;
     border-style: solid;
@@ -56,19 +58,19 @@ header {
 }
 
 #header-left {
-    background-color: red;
+    background-color: #fd5353;
     border-color: #40465a;
     border-width: 10px;
 }
 
 #header-center {
-    background-color: red;
+    background-color: #fd5353;
     border-color: #40465a;
     border-width: 10px;
 }
 
 #header-right {
-    background-color: red;
+    background-color: #fd5353;
     border-color: #40465a;
     border-width: 10px;
 }
@@ -84,18 +86,83 @@ main {
     border-color: black;
     border-width: 15px;
     margin-bottom: 20px;
+    height: 150px;   
+    background-color: black;
 }
 
 article {
     border-style: solid;
     border-color: #40465a;
-    border-width: 15px;    
+    background-color: #40465a;
+    border-width: 15px;  
+    width: 70%;   
+    height: 120px;   
+}
+
+aside {
+    width: 27%;
+    background-color: #fd5353;
+    height: 150px;
+}
+
+aside > section {
+    height: 145px;  
+    width: 100%;
+    align-self: left;
+    margin-top: 10px; 
+}
+
+aside > section > p {
+    background-color: #eed461;
+    margin: 0px 10px 6px 10px;
+}
+
+.flex-vertical-dalt {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+main > article > section {
+    width: 100%;
+    background-color: #40465a;
+}
+
+/* #content > main > article > section > post {
+    width: 48%;
+    background-color:#1465b1;
+} */
+
+.art-corto {
+    width: 48%;
+    background-color:#1465b1;
+}
+
+.art-largo {
+    width: 100%;
+    background-color:#79b0e4;
+}
+
+.flex-2-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-1-col {
+    display: flex;
+    align-self: auto;
 }
 
 footer {
     border-style: solid;
     border-color: black;
     border-width: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
+footer > p {
+    background-color: #eed461;
+    border-width: 0px;
+    margin: 0px;
+}
